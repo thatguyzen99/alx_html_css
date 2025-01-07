@@ -1,0 +1,22 @@
+
+#what-we-do {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.icon {
+    text-align: center;
+    width: 45%;
+}
+
+.icon i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.icon h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+#what-we-do {
+    margin: 2rem 0;
+}
+
+#what-we-do h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#what-we-do .row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#what-we-do .item {
+    padding: 1rem 1.5rem;
+    background-color: #FF6565;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+#what-we-do .item:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.8;
+}
+
+#our-results {
+    margin: 2rem 0;
+}
+
+#our-results h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#our-results .row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#our-results .pentagon {
+    width: 100px;
+    height: 100px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    transition: transform 0.6s ease-in-out;
+}
+
+#our-results .pentagon:hover {
+    transform: rotate(360deg) scale(1.2);
+    background-color: #FFA07A;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#what-we-do .item {
+    animation: bounce 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+#our-results .pentagon {
+    animation: pulse 2s infinite;
+}
